@@ -1,5 +1,6 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <div className = "col-3">
       <p>Links</p>
+      <Signup />
       </div>
     </div>
   );
