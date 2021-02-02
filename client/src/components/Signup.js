@@ -17,13 +17,14 @@ export class Signup extends Component {
       this.setState({
         buttonClicked: true
       });
+      alert("sign-up complete!");
     }
   }
 
   render() {
     return (
       <div>
-        <h3>Signup for news.</h3>
+        <h3>Get updates here.</h3>
         <Form>
           <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
