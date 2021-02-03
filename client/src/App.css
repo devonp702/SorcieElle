@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Yusei+Magic&display=swap');
 
 a img {
   max-width: 25px;
   max-height: 25px;
+}
+
+.container {
+  background-color: rgb(183, 128, 255);
+  padding-top: 50px;
+}
+
+h1, h2 {
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: bold;
+}
+
+p, li {
+  font-family: 'Yusei Magic', sans-serif;
 }

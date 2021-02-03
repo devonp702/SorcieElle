@@ -2,13 +2,24 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const PORT = 3001;
+const bodyParser = require("body-parser");
 const router = express.Router();
 const mongoose = require("mongoose");
 let fan = require("./model");
+var corsOptions = {
+  origin: "http://localhost:3001"
+};
+app.use(cors(corsOptions));
 
-app.use(cors());
+app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", router);
+
+app.post('/', function (req, res) {
+  res.send(fan)
+})
 
 mongoose.connect("mongodb://127.0.0.1:27017/mailList", {
   useNewUrlParser: true

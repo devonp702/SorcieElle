@@ -79,7 +79,7 @@ function App() {
 </Carousel>
       </Col>
       <Col xs={12} md={3}>
-        <h2>The Guilded Desert</h2>
+        <h2>Who am I?</h2>
       <p>Music is the force that fulfills me. I’m so grateful to every person that I’m able to share it with. The drive to create, perform and experience music is my lifeblood. It calls to me every moment. My dream is to share the joy and intensity of my musical journey globally. Welcome and stay tuned!</p>
       <Signup />
       </Col>
