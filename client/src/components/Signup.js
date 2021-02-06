@@ -7,9 +7,8 @@ export class Signup extends Component {
   constructor(){
     super(props);
     this.state = {
-      email: String,
-      name: String,
-      buttonClicked: false
+      email: '',
+      name: ''
     };
   }
 
@@ -28,9 +27,21 @@ export class Signup extends Component {
     return (
       <div>
         <h3>Get updates here.</h3>
-        <Form>
-          
+        <Form onSubmit={event => event.preventDefault()}>
+          <input
+            type='text'
+            name='name'
+            value={this.state.name}
+            onChange={this.onChangeHandler}
+          />
+          <input
+            type='text'
+            name='email'
+            value={this.state.email}
+            onChange={this.onChangeHandler}
+          />
       </Form>
+      <Button onClick={this.submitForm}>submit</Button>
     </div>
     )
   }
