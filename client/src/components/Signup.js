@@ -5,14 +5,14 @@ import axios from "axios";
 
 export class Signup extends Component {
   constructor(){
-    super(props);
+    super();
     this.state = {
       email: '',
       name: ''
     };
   }
 
-  postDataHandler = () => {
+  submitForm = () => {
     const data = {
         name: this.state.name,
         email: this.state.email
@@ -22,18 +22,26 @@ export class Signup extends Component {
             console.log(response);
         });
 }
+onChangeHandler = event => {
+  event.preventDefault();
+  this.setState({
+    [event.target.name]: event.target.value
+  });
+}
 
   render() {
     return (
       <div>
         <h3>Get updates here.</h3>
         <Form onSubmit={event => event.preventDefault()}>
+          Name:
           <input
             type='text'
             name='name'
             value={this.state.name}
             onChange={this.onChangeHandler}
           />
+          Email:
           <input
             type='text'
             name='email'
