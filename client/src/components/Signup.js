@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import axios from "axios";
+import API from "../utils/API"
 
 export class Signup extends Component {
   constructor(){
@@ -18,7 +18,7 @@ export class Signup extends Component {
         email: this.state.email
     };
     console.log(data)
-    axios.post('https://localhost:3001/', data)
+    API.postUsers(data)
         .then(response => {
             console.log(response);
         });

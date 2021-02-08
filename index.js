@@ -1,36 +1,30 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const PORT = 3001;
+const routes = require("./routes");
+const PORT = process.env.PORT || 3001;
 const bodyParser = require("body-parser");
-const router = express.Router();
 const mongoose = require("mongoose");
-const entryController = require("./controllers/entryController");
-var corsOptions = {
-  origin: "http://localhost:3000"
-};
-app.use(cors(corsOptions));
-
+app.use(cors());
 app.use(bodyParser.json());
-
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use("/", router);
-
-app.post('/', function (req, res) {
-  res.post(entryController.create);
-})
-
-mongoose.connect("mongodb://127.0.0.1:27017/mailList", {
-  useNewUrlParser: true
-});
-
-const connection = mongoose.connection;
-
-connection.once("open", function() {
-  console.log("Connection with MongoDB was successful");
-});
-
+app.use(express.json());
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+// Add routes, both API and view
+app.use(routes);
+ const options = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+} 
+mongoose.connect(process.env.MONGODB_URI ||"mongodb://127.0.0.1:27017/mailList", options, (err)  => { 
+    if (err) throw err;
+    console.log("DB connection established")
+}
+);
 app.listen(PORT, function(){
   console.log("This server is chugging along on port:" + PORT);
 });
