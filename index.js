@@ -7,7 +7,7 @@ const router = express.Router();
 const mongoose = require("mongoose");
 const entryController = require("./controllers/entryController");
 var corsOptions = {
-  origin: "http://localhost:3001"
+  origin: "http://localhost:3000"
 };
 app.use(cors(corsOptions));
 

@@ -17,6 +17,7 @@ export class Signup extends Component {
         name: this.state.name,
         email: this.state.email
     };
+    console.log(data)
     axios.post('https://localhost:3001/', data)
         .then(response => {
             console.log(response);
