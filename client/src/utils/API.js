@@ -5,7 +5,7 @@ export default {
     return axios.get("/api/users");
   },
 // creates a new user
-  postUsers: function() {
-    return axios.post("/api/users");
-  },
+  postUsers: function(data) {
+    return axios.post("/api/users", data);
+},
 }
