@@ -21,7 +21,7 @@ app.use(routes);
   useCreateIndex: true,
   useFindAndModify: false
 } 
-mongoose.connect(process.env.MONGODB_URI ||"mongodb://127.0.0.1:27017/mailList", options, (err)  => { 
+mongoose.connect(process.env.MONGODB_URI ||"mongodb://localhost/mailList", options, (err)  => { 
     if (err) throw err;
     console.log("DB connection established")
 }

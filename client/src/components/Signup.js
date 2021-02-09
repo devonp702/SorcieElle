@@ -14,14 +14,14 @@ export class Signup extends Component {
 
   submitForm = () => {
     const data = {
-        name: this.state.name,
-        email: this.state.email
+      name: this.state.name,
+      email: this.state.email
     };
-    console.log(data)
     API.postUsers(data)
-        .then(response => {
-            console.log(response);
-        });
+    .then(response => {
+      console.log(response);
+    });
+    alert("Thank you!");
 }
 onChangeHandler = event => {
   event.preventDefault();
@@ -55,5 +55,4 @@ onChangeHandler = event => {
     )
   }
 };
-
 export default Signup
