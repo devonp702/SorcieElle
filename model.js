@@ -1,5 +1,19 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-let fanSchema = new Schema({  name: {    type: String  },  email: {    type: String  }});
-const Fan = mongoose.model("Fan", fanSchema);
+
+const FanSchema = new Schema({
+  name: {
+    type: String,
+    trim: true,
+    required: "String is Required"
+  },
+
+  email: {
+    type: String,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+  }
+});
+
+const Fan = mongoose.model("Fan", FanSchema);
+
 module.exports = Fan;

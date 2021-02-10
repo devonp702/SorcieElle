@@ -1,7 +1,8 @@
 const router = require("express").Router();
-const entryController = require("../../controllers/entryController");
+const entryController = require("../../controllers/fanController");
 // Matches with "/api/user"
-router.route("/user")
+router.route("/")
   .get(entryController.findAll)
   .post(entryController.create);
+  
 module.exports = router;
