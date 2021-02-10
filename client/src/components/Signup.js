@@ -7,8 +7,8 @@ export class Signup extends Component {
   constructor(){
     super();
     this.state = {
-      email: '',
-      name: ''
+      name: '',
+      email: ''
     };
   }
 
@@ -21,6 +21,7 @@ export class Signup extends Component {
     .then(response => {
       console.log(response);
     });
+    console.log(this.state);
     alert("Thank you!");
 }
 onChangeHandler = event => {
