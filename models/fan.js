@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const FanSchema = new Schema({
+const fanSchema = new Schema({
   name: {
     type: String,
     trim: true,
@@ -14,6 +14,6 @@ const FanSchema = new Schema({
   }
 });
 
-const Fan = mongoose.model("Fan", FanSchema);
+const Fan = mongoose.model("Fan", fanSchema);
 
 module.exports = Fan;
