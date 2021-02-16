@@ -5,14 +5,16 @@ a img {
   max-height: 25px;
 }
 
+
 .container {
   background-color: rgb(183, 128, 255);
   padding-top: 50px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Petit Formal Script', cursive;
   font-weight: bold;
+  text-align: center;
 }
 
 p, li {

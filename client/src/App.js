@@ -21,11 +21,13 @@ function App() {
       <Row>
       <Col xs={6} md={3}>
         <h1>Sorcie Elle</h1>
+        <span id="icons">
         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sorcie.elle.music/"> <img src={facebook} alt="the facebook logo."/> </a>
         <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UChkWMHz0HqTm-K-sYL-tMIQ/featured"> <img src={youtube} alt="the youtube logo."/> </a>
         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/sorcie.elle.music/"> <img src={insta} alt="the instagram logo."/> </a>
         <a target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/7KvgBfStpEfwpT7TPXQiFf"> <img src={spotify} alt="the spotify logo."/> </a>
         <a target="_blank" rel="noreferrer" href="https://music.apple.com/us/artist/sorcie-elle/1501922511"> <img src={itunes} alt="the itunes logo."/> </a>
+        </span>
       </Col>
       <Col xs={6} md={6}>
       <Carousel>
