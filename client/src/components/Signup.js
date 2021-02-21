@@ -42,7 +42,7 @@ onChangeHandler = event => {
             name='name'
             value={this.state.name}
             onChange={this.onChangeHandler}
-          />
+          /><br/>
           Email:
           <input
             type='text'
