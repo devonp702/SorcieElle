@@ -5,6 +5,9 @@ a img {
   max-height: 25px;
 }
 
+form {
+  color: floralwhite;
+}
 
 .container {
   background-color: rgb(0, 0, 0);
