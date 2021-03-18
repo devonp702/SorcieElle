@@ -39,7 +39,7 @@ function App() {
     />
     <Carousel.Caption>
       <h3>Sorcie Elle</h3>
-      <p>Local Las Vegas singer and songwriter.</p>
+      <p>Las Vegas singer and songwriter.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -51,7 +51,6 @@ function App() {
 
     <Carousel.Caption>
       <h3>Gone for Good</h3>
-      <p>The darkness is as empty as it should be now....</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -63,7 +62,7 @@ function App() {
 
     <Carousel.Caption>
       <h3>The Calling</h3>
-      <p>New album being created now.</p>
+      <p>New album releasing soon.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -74,7 +73,7 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3>For the Fans</h3>
+      <h3>news</h3>
       <p>Sign up to get the latest info.</p>
     </Carousel.Caption>
   </Carousel.Item>
