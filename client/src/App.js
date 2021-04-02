@@ -62,7 +62,7 @@ function App() {
 
     <Carousel.Caption>
       <h3>The Calling</h3>
-      <p>New album releasing soon.</p>
+      <p>New album out now.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
