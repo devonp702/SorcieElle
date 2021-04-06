@@ -1,7 +1,7 @@
 # SorcieElle
 
-  [link](http://github.com/devonP702/sorcieElle)
-  [deployed here](https://guarded-brushlands-27514.herokuapp.com/)
+   link to [repository](http://github.com/devonP702/sorcieElle)
+  Site deployed [here](https://guarded-brushlands-27514.herokuapp.com/)
   ![Include a screenshot](screenshot.jpg)
 
   ## Table of Contents
